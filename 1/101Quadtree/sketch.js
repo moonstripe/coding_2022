@@ -1,17 +1,19 @@
 let qtree
 let points = []
+let font
 
 function preload() {
     font = loadFont('./AvenirNextLTPro-Demi.otf');
 }
 function setup() {
-    createCanvas(1000, 300)
+    createCanvas(900, 300)
 
     let boundary = new Rectangle(window.innerWidth/2, window.innerHeight/2, window.innerWidth/2, window.innerHeight/2)
     qtree = new QuadTree(boundary, 1);
 
     points = font.textToPoints('moon', 50, 200, 300, {
         sampleFactor: 0.75
+
     })
 
     console.log(points)
