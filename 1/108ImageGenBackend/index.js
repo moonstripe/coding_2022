@@ -10,4 +10,4 @@ const client = new TwitterApi({
 
 const imgbot = new ImageBot(client);
 
-imgbot.run();
+// imgbot.run();
