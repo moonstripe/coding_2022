@@ -1,5 +1,5 @@
-const WIDTH = 700
-const HEIGHT = 700
+const WIDTH = window.innerWidth
+const HEIGHT = window.innerHeight
 
 let antCount = 5;
 let antSpeed = 6
