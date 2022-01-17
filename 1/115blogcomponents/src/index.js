@@ -18,7 +18,7 @@ console.log(process.env);
 
 const client = new ApolloClient({
   // include your sanity api including database and 'default'
-  uri: process.env.SANITY_URI,
+  uri: 'https://s7hkd94g.api.sanity.io/v1/graphql/production/default',
   cache: new InMemoryCache()
 });
 
