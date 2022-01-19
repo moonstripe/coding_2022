@@ -1,4 +1,4 @@
-import React, { createRef, useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import p5 from 'p5';
 
 export const Loading = (props) => {
@@ -6,7 +6,7 @@ export const Loading = (props) => {
     const { height } = props;
 
 
-    let myRef = createRef()
+    let myRef = useRef()
 
 
 
