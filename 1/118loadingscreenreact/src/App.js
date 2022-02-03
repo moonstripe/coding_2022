@@ -34,18 +34,39 @@ function App() {
 
   return (
     <Box className="App" sx={{ mx: 1, my: 1 }}>
-      <Loading/>
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+    <Loading/>
+{
+        false? (
+          <Grid container spacing={2}>
+            {
+              posts.map(p => (
+                <Grid item xs={12 / posts.length}>
+                  <Card>
+                    <CardMedia height='549' component='img' src={p.download_url} />
+                    <CardContent>
+                      <p>This is the content. Above is an image from <a href='https://picsum.photos/'>Lorem Picsum</a>.</p>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))
+            }
+          </Grid>
+        ) : (
+          <Grid container spacing={2}>
+            {
+              Array(numPosts).map(() => (
+                <Grid item xs={12 / numPosts}>
+                  <Card>
+                    <CardMedia height='549' component={Loading} />
+                    <CardContent component={Loading} />
+                  </Card>
+                </Grid>
+              ))
+            }
+          </Grid>
+
+        )
+      }
     </Box >
   );
 }
