@@ -34,7 +34,8 @@ function App() {
 
   return (
     <Box className="App" sx={{ mx: 1, my: 1 }}>
-      {
+    <Loading/>
+{
         false? (
           <Grid container spacing={2}>
             {
@@ -66,17 +67,6 @@ function App() {
 
         )
       }
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
     </Box >
   );
 }

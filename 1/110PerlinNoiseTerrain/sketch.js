@@ -1,5 +1,5 @@
 let cols, rows;
-const scl = 20;
+const scl = 100;
 const w = 2000;
 const h = 1000;
 
@@ -27,7 +27,7 @@ function draw() {
     for (let y = 0; y < rows; y++) {
         let xoff = 0;
         for (let x = 0; x < cols; x++) {
-            terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 100);
+            terrain[x][y] = map(noise(xoff, yoff), 0, 1, -200, 200);
             xoff += 0.1;
         }
         yoff += 0.1;
