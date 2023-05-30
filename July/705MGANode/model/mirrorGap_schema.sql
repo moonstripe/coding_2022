@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS mga_db;
+
+CREATE DATABASE mga_db;
+
+USE mga_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT NOT NULL,
+    is_paying BOOL DEFAULT 0,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+
+CREATE TABLE mga (
+	id INT AUTO_INCREMENT NOT NULL,
+    PRIMARY KEY (id)
+)
+

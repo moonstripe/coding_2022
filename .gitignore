@@ -1,0 +1,6 @@
+**/node_modules/*
+**/libraries/*
+**/.env
+**/.DS_Store
+**/lib/*
+**/target/*

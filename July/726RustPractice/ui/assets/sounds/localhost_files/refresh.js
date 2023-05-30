@@ -1,0 +1,1 @@
+let reloading = false; const buildId = "ce508311-e4fa-4e92-a064-d4e67d6a1cd4"; new EventSource("/_frsh/alive").addEventListener("message", (e) => { if (e.data !== buildId && !reloading) { reloading = true; location.reload(); } });

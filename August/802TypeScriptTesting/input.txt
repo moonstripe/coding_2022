@@ -1,0 +1,1 @@
+The Deno runtime API allows developers to write text to files via the Deno.writeTextFile() method. It just requires a file path and text string. The method returns a promise which resolves when the file was successfully written.

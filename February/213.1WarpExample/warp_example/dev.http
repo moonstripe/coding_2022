@@ -1,0 +1,11 @@
+## Quick REST
+
+GET http://127.0.0.1:8080/todos/12345
+X-Auth-Token: 28349.exp.signature
+Content-Type: application/json
+
+
+{
+    "id": 34,
+    "title": "fake"
+}
